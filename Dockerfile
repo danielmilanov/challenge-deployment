@@ -11,8 +11,6 @@ COPY go.mod go.sum ./
 RUN go mod download \
     && rm go.mod go.sum
 
-
-
 EXPOSE 8080
 
 CMD ["./challenge"]
